@@ -1,0 +1,47 @@
+.author {
+  background-color: white;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+  max-width: 982px;
+  height: 500px;
+  &__description {
+      
+    &--heading {
+      font-size: 32px;
+      color: #234361;
+      
+    }
+    &--special {
+      color: #1070ca;
+    }
+    &--text {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        color: #425A70;
+        
+    }
+    &--link {
+       color: #4DA8FF;
+       font-weight: bold;
+    }
+  }
+  &__mail {
+      background-color: #4DA8FF;
+      width: 278px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 64px;
+      &--address {
+          position: static;
+          font-size: 20px;
+          font-weight: bold;
+          color: #FFFF;
+          line-height: 40px;
+      }
+  }
+}

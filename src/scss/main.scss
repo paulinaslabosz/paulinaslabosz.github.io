@@ -2,4 +2,17 @@
 
 @import "_variables";
 @import "modules/hello.scss";
+@import "modules/author.scss";
+@import "modules/skills.scss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&display=swap');
+main {
+    max-width: 1440px;
+    margin: 0 0 0 0;
+    font-family: 'Nunito';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
