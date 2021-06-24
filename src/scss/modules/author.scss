@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 288px;
+  
   min-height: 500px;
   &__description {
       
@@ -13,6 +13,7 @@
       color: #234361;
       text-align: center;
       line-height: 32px;
+      margin: 0;
       
     }
     &--special {
@@ -70,6 +71,7 @@
           font-weight: bold;
           color: #FFFF;
           line-height: 40px;
+          
       }
   }
 }
