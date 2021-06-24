@@ -1,16 +1,18 @@
 .author {
   background-color: white;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
-  max-width: 982px;
-  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 288px;
+  min-height: 500px;
   &__description {
       
     &--heading {
-      font-size: 32px;
+      font-size: 26px;
       color: #234361;
+      text-align: center;
+      line-height: 32px;
       
     }
     &--special {
@@ -21,12 +23,36 @@
         font-style: normal;
         font-weight: 300;
         color: #425A70;
+        text-align: center;
+        line-height: 32px;
         
     }
     &--link {
        color: #4DA8FF;
        font-weight: bold;
     }
+  }
+  &__image {
+    
+      &--greet {
+          display: none;
+          @media screen {min-width: 1440px;
+            position: absolute;
+            font-size: 32px;
+            background-color: #1070CA;
+            padding: 16px;
+            border-radius: 16px;
+            color: #FFF;
+            font-weight: bold;
+   
+          }
+          
+      }
+      &--photo {
+         width: 96px; 
+         border: 16px solid #F6F9FD;
+         border-radius: 50%;
+      }
   }
   &__mail {
       background-color: #4DA8FF;
@@ -36,6 +62,8 @@
       align-items: center;
       justify-content: center;
       border-radius: 64px;
+      margin-top: 48px;
+      margin-bottom: 88px;
       &--address {
           position: static;
           font-size: 20px;
