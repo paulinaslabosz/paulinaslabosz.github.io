@@ -2,14 +2,13 @@
   background: #1070ca;
   color: #fff;
   padding: 64px 16px 88px;
-  
   &__heading {
     font-size: 36px;
     line-height: 48px;
     font-weight: 700;
     text-align: center;
-    
-     }
+    margin: 0 0 0 0;
+  }
   &__emoji {
     font-weight: bold;
     font-size: 64px;
@@ -23,16 +22,46 @@
     font-size: 24px;
     line-height: 44px;
     text-align: center;
-  
     margin-top: 16px;
   }
-  &__list {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
-    color: #DBEAF7;
-    width: 288px;
-    margin: 0 auto;
+}
+
+.skills-list {
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #dbeaf7;
+  width: 288px;
+  margin: 0 0 0 0;
+  padding: 0;
+  list-style-type: none;
+  &__item {
+    margin: 0 0 16px 0;
+    padding: 0 0 0 24px;
+    position: relative;
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 7px;
+      content: "";
+      width: 12px;
+      height: 9px;
+      background-image: url("../assets/img/small-tick-green.svg");
+      display: block;
+      .skills-list--blue & {
+        background-image: url("../assets/img/small-tick-blue.svg");
+      }
+      .skills-list--dot & {
+          background-color: #DBEAF7;
+          border-radius: 50%;
+          width: 2px;
+          height: 2px;
+          top: 11px;
+          left: 5px;
+
+      }
+    }
   }
 }
