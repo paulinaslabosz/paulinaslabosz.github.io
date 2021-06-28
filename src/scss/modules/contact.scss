@@ -1,0 +1,20 @@
+.contact {
+  background-color: #dbeaf7;
+  padding: 64px 16px 88px;
+  &__heading {
+    color: #234361;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    margin: 0 0 32px 0;
+  }
+  &__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    color: #425A70;
+    text-align: center;
+    margin-bottom: 56px;
+  }
+}
