@@ -7,11 +7,32 @@
     margin: 0 auto;
   }
   @media (min-width: $desktop) {
-    max-width: 830px;
+    max-width: 100%;
   }
 
   &__description {
     text-align: center;
+  @media (min-width: $desktop) {
+    max-width: 786px;
+    position: relative;
+    margin: 0 auto;
+    &::before, &::after {
+      content: '';
+      display: block;
+      width: 95.03px;
+      height: 254.88px;
+      top: 0%;
+      position: absolute;
+    }
+    &::before {
+      background: url('../assets/img/decoration-left.svg');
+      right: 100%;
+    }
+    &::after {
+      background: url('../assets/img/decoraion-right.svg');
+      left: 100%;
+    }
+  }
     &--heading {
       font-size: 26px;
       color: #234361;
@@ -25,6 +46,7 @@
     }
     &--special {
       color: #1070ca;
+      white-space: nowrap;
     }
     &--text {
       font-size: 16px;
