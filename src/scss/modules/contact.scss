@@ -1,5 +1,9 @@
 .contact {
   background-color: #dbeaf7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 64px 16px 88px;
   
   &__heading {
@@ -29,21 +33,18 @@
 }
 
 .contact__mail {
-    background-color: #4DA8FF;
+  display: inline-block;
+    background-color: #4da8ff;
     width: 278px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 64px;
-    margin-top: 64px;
-    
-    &--address {
-        position: static;
-        font-size: 20px;
-        font-weight: bold;
-        color: #FFFF;
-        line-height: 40px;
-        
-    }
+    margin-top: 48px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffff;
+    line-height: 40px;
+  text-decoration: none;
+    padding: 4px 24px;
+    text-align: center;
+  
 }
+
