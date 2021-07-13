@@ -2,6 +2,15 @@
   background: #1070ca;
   color: #fff;
   padding: 64px 16px 88px;
+  &__columns {
+    @media (min-width: $desktop) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 24px;
+      max-width: 1184px;
+      margin: 0 auto;
+    }
+  }
   &__heading {
     font-size: 36px;
     line-height: 48px;
@@ -37,6 +46,9 @@
   margin: 0 auto;
   padding: 0;
   list-style-type: none;
+  @media (min-width: $desktop) {
+    margin-left: 20%;
+  }
   &__item {
     margin: 0 0 16px 0;
     padding: 0 0 0 24px;
@@ -65,3 +77,4 @@
     }
   }
 }
+
