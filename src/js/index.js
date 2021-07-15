@@ -35,9 +35,12 @@ fetch("https://api.github.com/users/paulinaslabosz/repos?sort=created&direction=
             <span class="project__label">demo:</span
             ><span
               >&lt;<a
+              target="_blank"
+              rel="noopener noreferrer"
                 href="${homepage}"
                 title="${name} - demo"
                 class="project__link"
+                
                 >see_here</a
               >&gt;</span
             >
@@ -45,10 +48,12 @@ fetch("https://api.github.com/users/paulinaslabosz/repos?sort=created&direction=
           <p class="project__grid">
             <span class="project__label">github:</span
             ><span
-              >&lt;<a
+              >&lt;<a target="_blank"
+              rel="noopener noreferrer"
                 href="${html_url}"
                 title="${name} - github"
                 class="project__link"
+                
                 >source_code</a
               >&gt;</span
             >
