@@ -38,7 +38,7 @@ export const Link = styled(NavLink)`
     &:before {
       content: '';
       position: absolute;
-      background-color: white;
+      background-color: ${({ theme }) => theme.colors.almond};
       bottom: 0;
       left: 0;
       width: 100%;
