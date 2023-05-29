@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.69646c4d.css",
+    "main.js": "/static/js/main.7b1f118b.js",
+    "static/media/Pola.jpeg": "/static/media/Pola.2d3214f9e884dcf70d42.jpeg",
+    "static/media/background.jpg": "/static/media/background.0e05b54954b268e2975c.jpg",
+    "static/media/sass.svg": "/static/media/sass.903cef0c9879296f452e2bd0364f58e9.svg",
+    "static/media/githubIcon.svg": "/static/media/githubIcon.1f1ffc8cdad22ea7e3ed7b078dc40b64.svg",
+    "static/media/linkedinIcon.svg": "/static/media/linkedinIcon.53626655f6cc344189476f71bc1e4fda.svg",
+    "static/media/github.svg": "/static/media/github.2a9dae6b331dcf015d326a052f2d0422.svg",
+    "static/media/react.svg": "/static/media/react.a060cbe85e50deda1d61452cee9de5b2.svg",
+    "static/media/javascript.svg": "/static/media/javascript.081325c6f229605dce15142ddd948d6d.svg",
+    "static/media/webpack.svg": "/static/media/webpack.2064de68e0f0042e3cbbda61e8456cbb.svg",
+    "static/media/git.svg": "/static/media/git.43d387b77657117c0e407816cbf72476.svg",
+    "index.html": "/index.html",
+    "static/media/css.svg": "/static/media/css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
+    "static/media/html.svg": "/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
+    "main.69646c4d.css.map": "/static/css/main.69646c4d.css.map",
+    "main.7b1f118b.js.map": "/static/js/main.7b1f118b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69646c4d.css",
+    "static/js/main.7b1f118b.js"
+  ]
+}
