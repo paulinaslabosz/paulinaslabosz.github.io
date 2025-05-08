@@ -9,6 +9,12 @@ export const Wrapper = styled.div`
   padding: 24px;
   border-radius: 40px;
   z-index: 1;
+  margin: 1rem;
+  @media (max-width: 767px) {
+    width: calc(100% - 2rem);
+    height: calc(100vh - 2rem);
+    margin: 1rem;
+  }
 `;
 
 export const Content = styled.section`

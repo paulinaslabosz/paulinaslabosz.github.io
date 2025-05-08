@@ -7,6 +7,9 @@ export const Wrapper = styled.div`
   height: 90%;
   width: 100%;
   margin: 0 20px;
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
 `;
 export const Description = styled.div`
   text-align: center;

@@ -29,7 +29,6 @@ function Projects() {
     getProjects();
   }, []);
 
-  console.log(localStorage);
   const projectsList = projects.map((project) => (
     <Project
       key={project.id}
