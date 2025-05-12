@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 90%;
+  flex-wrap: wrap;
   width: 100%;
   margin: 0 20px;
   @media (max-width: 767px) {
@@ -17,27 +17,29 @@ export const Description = styled.div`
 
 export const Image = styled.div`
   & > img {
+    max-width: 100%;
     width: 300px;
+    height: auto;
     border-radius: 40px;
     border: 2px solid ${({ theme }) => theme.colors.darkGold};
   }
 `;
 
 export const Title = styled.h1`
-  font-size: ${({ theme }) => theme.fontSize.xxl};
+  font-size: ${({ theme }) => theme.fontSize.xl};
   font-weight: normal;
   letter-spacing: 4px;
   margin: 0 0 15px 0;
 `;
 
 export const Name = styled.h2`
-  font-size: ${({ theme }) => theme.fontSize.xl};
+  font-size: ${({ theme }) => theme.fontSize.l};
   font-weight: normal;
   margin: 0;
   padding: 0;
 `;
 
 export const Position = styled.h2`
-  font-size: ${({ theme }) => theme.fontSize.l};
+  font-size: ${({ theme }) => theme.fontSize.m};
   font-weight: lighter;
 `;

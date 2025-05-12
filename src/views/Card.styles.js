@@ -10,17 +10,16 @@ export const Wrapper = styled.div`
   border-radius: 40px;
   z-index: 1;
   margin: 1rem;
-  @media (max-width: 767px) {
-    width: calc(100% - 2rem);
-    height: calc(100vh - 2rem);
-    margin: 1rem;
+  @media (max-width: 768px) {
+    height: 100%;
+    width: 100%;
   }
 `;
 
 export const Content = styled.section`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: 90%;
   width: 100%;

@@ -20,4 +20,7 @@ export const Background = styled.div`
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
   }
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
 `;
