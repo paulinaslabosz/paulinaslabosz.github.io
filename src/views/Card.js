@@ -1,7 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { Wrapper, Content } from './Card.styles';
+import { Wrapper, Content, NavBar, NavHam } from './Card.styles';
 import Nav from './Nav';
+import HamburgerMenu from './HamburgerMenu';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Technologies from '../pages/Technologies';
@@ -12,7 +13,12 @@ import ErrorPage from '../pages/ErrorPage';
 function Card() {
   return (
     <Wrapper>
-      <Nav />
+      <NavBar>
+        <Nav />
+      </NavBar>
+      <NavHam>
+        <HamburgerMenu />
+      </NavHam>
       <Content>
         <Routes>
           <Route path="/" element={<Home />} />

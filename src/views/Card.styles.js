@@ -24,3 +24,16 @@ export const Content = styled.section`
   height: 90%;
   width: 100%;
 `;
+
+export const NavBar = styled.div`
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const NavHam = styled.div`
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+`;
