@@ -12,12 +12,14 @@ export const HamIcon = styled.svg`
   height: 3rem;
   color: ${({ theme }) => theme.colors.almond};
   cursor: pointer;
+  z-index: 1;
 `;
 
 export const HamList = styled.ul`
   display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
   flex-direction: column;
-  margin-top: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
 `;
 
 export const Item = styled(NavLink)`
