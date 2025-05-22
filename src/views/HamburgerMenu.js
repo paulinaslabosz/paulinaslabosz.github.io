@@ -1,4 +1,5 @@
 import { React, useState } from 'react';
+import { HamList, Item } from './HamburgerMenu.styles';
 import { Wrapper, HamIcon } from './HamburgerMenu.styles';
 import HamburgerIcon from '../assets/burgermenu.svg';
 
@@ -12,6 +13,13 @@ function HamburgerMenu() {
         <path d="M4 12L20 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
         <path d="M4 6L20 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
       </HamIcon>
+      <HamList isOpen={isOpen}>
+        <Item to="/">home</Item>
+        <Item to="/about">about</Item>
+        <Item to="/technologies">technologies</Item>
+        <Item to="/projects">projects</Item>
+        <Item to="/contact">contact</Item>
+      </HamList>
     </Wrapper>
   );
 }
