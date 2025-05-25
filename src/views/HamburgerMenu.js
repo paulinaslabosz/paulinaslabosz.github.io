@@ -1,11 +1,29 @@
-import { React, useState } from 'react';
+import { React, useState, useRef, useEffect } from 'react';
 import { HamList, Item } from './HamburgerMenu.styles';
 import { Wrapper, HamIcon } from './HamburgerMenu.styles';
-import HamburgerIcon from '../assets/burgermenu.svg';
+import { useLocation } from 'react-router-dom';
 
 function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen);
+  const ref = useRef(null);
+  const buttonRef = useRef(null);
+  const location = useLocation();
+  useEffect(() => {
+    const handleOutsideClick = (e) => {
+      if (!ref.current?.contains(e.target) && !buttonRef.current?.contains(e.target)) {
+        setIsOpen(false);
+      }
+    };
+    window.addEventListener('mousedown', handleOutsideClick);
+    return () => {
+      window.removeEventListener('mousedown', handleOutsideClick);
+    };
+  }, [ref, buttonRef]);
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
+
   return (
     <Wrapper>
       <HamIcon onClick={() => setIsOpen(!isOpen)} width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
