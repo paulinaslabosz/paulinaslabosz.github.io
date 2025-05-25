@@ -29,4 +29,9 @@ export const List = styled.ul`
     box-shadow: inset 0 0 5px ${({ theme }) => theme.colors.darkGrey};
     border-radius: 10px;
   }
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
 `;

@@ -7,6 +7,9 @@ export const Item = styled.li`
   height: 100%;
   display: flex;
   flex-direction: column;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const Title = styled.h3`
