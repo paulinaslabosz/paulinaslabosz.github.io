@@ -14,6 +14,9 @@ export const Email = styled.p`
       color: ${({ theme }) => theme.colors.darkGold};
     }
   }
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const List = styled.ul`
