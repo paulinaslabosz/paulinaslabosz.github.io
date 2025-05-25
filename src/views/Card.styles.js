@@ -23,6 +23,9 @@ export const Content = styled.section`
   align-items: center;
   height: 90%;
   width: 100%;
+  @media (max-width: 768px) {
+    justify-content: flex-start;
+  }
 `;
 
 export const NavBar = styled.div`

@@ -16,6 +16,13 @@ export const WrapperIcon = styled.ul`
   grid-row-gap: 20px;
   justify-items: center;
   align-items: center;
+  padding: 1rem;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+    justify-content: center;
+  }
 `;
 
 export const Icon = styled.li`
