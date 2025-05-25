@@ -16,10 +16,18 @@ export const HamIcon = styled.svg`
 `;
 
 export const HamList = styled.ul`
-  display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
+  overflow: hidden;
+  max-height: ${({ isOpen }) => (isOpen ? '500px' : '0')};
+  opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
+  transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-20px)')};
+  transition: all 0.6s ease;
   flex-direction: column;
+  display: flex;
   position: fixed;
-  background: rgba(0, 0, 0, 0.6);
+  top: 6rem;
+  margin-top: 0;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
 `;
 
 export const Item = styled(NavLink)`
