@@ -16,7 +16,6 @@ function Projects() {
     />
   ));
 
-  console.log(projects);
   return (
     <>
       <Title>Projects</Title>
